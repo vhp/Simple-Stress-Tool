@@ -11,7 +11,6 @@ for cpu in $(seq 1 $(grep -c ^processor /proc/cpuinfo)); do
     sha512sum /dev/zero &
 done
 
-
 while true; do
     read -rp "Ready to kill? (Y/y) " y
     case $y in
